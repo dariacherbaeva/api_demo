@@ -1,0 +1,21 @@
+GET http://localhost:8080/api/recipe-management/recipes/
+
+###
+
+GET http://localhost:8080/api/recipe-management/recipes/1/
+
+###
+
+POST http://localhost:8080/api/recipe-management/recipes/
+Content-Type: application/json
+
+{
+  "name": "Post1",
+  "text": "Some text"
+  }
+
+###
+
+DELETE http://localhost:8080/api/recipe-management/recipes/2/
+
+###
