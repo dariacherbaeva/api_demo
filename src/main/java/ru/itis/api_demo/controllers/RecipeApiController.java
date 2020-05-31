@@ -1,5 +1,6 @@
 package ru.itis.api_demo.controllers;
 
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -8,6 +9,8 @@ import ru.itis.api_demo.repositories.RecipeRepository;
 
 import java.util.List;
 
+
+@Api(tags = "Recipe API")
 @RestController
 @RequestMapping("/api/recipe-management/")
 public class RecipeApiController {
